@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# WSL Set Browser
+# © Jules van Rie, 2025
+# Licensed under the MIT License. See LICENSE file in the project root for full license information.
+# https://www.github.com/julesvanrie/wslsetbrowser
+
 ## Color definitions for terminal output
 # Reset
 Color_Off='\033[0m'       # Text Reset
@@ -23,10 +28,7 @@ BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
 # Informational message
-echo -e "${White}Welcome to the ${BWhite} WSL Set Browser Script${Color_Off}"
-echo -e "${White}This script helps you select a browser for WSL and sets the BROWSER and GH_BROWSER${Color_Off}"
-echo -e "${White}environment variables in your .zshrc file.${Color_Off}"
-echo -e "${White}© Jules van Rie, 2025 - https://www.github.com/julesvanrie/wslsetbrowser${Color_Off}"
+echo "This script sets BROWSER and GH_BROWSER in .zshrc and .bashrc"
 echo ""
 
 # Check if running in WSL

@@ -15,6 +15,12 @@ These are needed by some tools to automatically open your Windows browser, for e
 bash -c "$(curl -s https://raw.githubusercontent.com/julesvanrie/wslsetbrowser/refs/heads/main/wslsetbrowser.sh)"
 ```
 
+The script will then detect the installed browsers, and prompt you to choose one. The script will then update `.bashrc` and `.zshrc`.
+
+You can also provide your own Windows path to your browser. The script will convert it to the WSL path.
+
+Previous `BROWSER` and `GH_BROWSER` settings will be removed.
+
 ## Supported browsers:
 - **Chrome** (installed normally, and in x86)
 - **Firefox** (installed normally, in x86, and user install through Microsoft Store)

@@ -88,6 +88,7 @@ function update_rc_file() {
     sed -i '/^export BROWSER=/d' "$file"
     sed -i '/^export GH_BROWSER=/d' "$file"
     # Add the new BROWSER line
+    echo "" >> "$file"
     echo "export BROWSER=\"${known_browsers[$choice]}\"" >> "$file"
     echo "export GH_BROWSER=\"'${known_browsers[$choice]}'\"" >> "$file"
     echo -e "${Green}BROWSER and GH_BROWSER set to ${Color_Off}${known_browsers[$choice]} ${Green}in${Color_Off} $file${Color_Off}"

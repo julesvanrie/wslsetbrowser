@@ -29,6 +29,7 @@ BWhite='\033[1;37m'       # White
 
 # Informational message
 echo "This script sets BROWSER and GH_BROWSER in .zshrc and .bashrc"
+echo -e "${Blue}Created by Jules van Rie - https://github.com/julesvanrie/wslsetbrowser${Color_Off}"
 echo ""
 
 # Check if running in WSL
